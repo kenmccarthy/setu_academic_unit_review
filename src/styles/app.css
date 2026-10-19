@@ -96,7 +96,7 @@ h4, .h4 { font-size: 1rem; margin: 1rem 0 0.4rem; }
 .brand { display: flex; flex-direction: column; }
 .brand-title { font-weight: 700; font-size: 1.05rem; }
 .brand-sub { font-size: 0.8rem; opacity: 0.92; }
-.unit-name { margin: 0; font-weight: 600; flex: 1 1 12rem; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.unit-name { margin: 0; font-weight: 600; flex: 1 1 12rem; min-width: 0; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
 .topbar-actions { display: flex; gap: 0.5rem; }
 .topbar .btn { background: transparent; color: var(--primary-text); border-color: var(--primary-text); }
 .topbar .btn:hover, .topbar .btn[aria-pressed="true"], .topbar .btn[aria-expanded="true"] { background: #0e2a45; }
@@ -120,7 +120,7 @@ main { grid-area: main; padding: 1.5rem 2rem 3rem; min-width: 0; }
 .loading { padding: 2rem; }
 
 @media (max-width: 900px) {
-  .layout { grid-template-columns: 1fr; grid-template-areas: 'top' 'side' 'main' 'foot'; }
+  .layout { grid-template-columns: minmax(0, 1fr); grid-template-areas: 'top' 'side' 'main' 'foot'; }
   .topbar .nav-toggle { display: inline-flex; }
   .sidebar { display: none; border-right: 0; border-bottom: 1px solid var(--border); padding: 0; }
   .sidebar.open { display: block; }

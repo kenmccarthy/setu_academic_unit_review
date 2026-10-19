@@ -131,7 +131,11 @@ test('makes no network requests beyond the static site', async ({ page, baseURL 
 
 test('mobile menu toggles navigation', async ({ page, isMobile }) => {
   test.skip(!isMobile, 'mobile only');
-  await start(page);
+  // The sample's long unit name previously forced the whole layout wider than the phone screen.
+  await start(page, '#/exports');
+  await page.getByRole('button', { name: 'Load fictional sample…' }).click();
+  await page.getByRole('button', { name: 'Replace with sample' }).click();
+  await expect(page.locator('.unit-name')).toContainText('FICTIONAL SAMPLE');
   const nav = page.getByRole('navigation', { name: 'Main' });
   await expect(nav).toBeHidden();
   await page.getByRole('button', { name: 'Menu' }).click();
@@ -139,7 +143,7 @@ test('mobile menu toggles navigation', async ({ page, isMobile }) => {
   await nav.getByRole('link', { name: 'Evidence Register' }).click();
   await expect(page.getByRole('heading', { level: 1, name: 'Evidence Register' })).toBeVisible();
   await expect(nav).toBeHidden();
-  const overflow = await page.evaluate(() => document.documentElement.scrollWidth > window.innerWidth);
+  const overflow = await page.evaluate(() => document.documentElement.scrollWidth > document.documentElement.clientWidth);
   expect(overflow).toBe(false);
 });
 

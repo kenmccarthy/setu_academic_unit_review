@@ -4,7 +4,19 @@ updates:
     directory: /
     schedule:
       interval: weekly
+    # Minor and patch updates arrive as one grouped PR. Major versions often need code
+    # changes (e.g. Vite 8 requires newer @vitejs/plugin-react and vitest), so they are
+    # upgraded deliberately rather than by Dependabot. Security updates are unaffected.
+    groups:
+      npm-minor-and-patch:
+        update-types: [minor, patch]
+    ignore:
+      - dependency-name: '*'
+        update-types: ['version-update:semver-major']
   - package-ecosystem: github-actions
     directory: /
     schedule:
       interval: monthly
+    groups:
+      actions:
+        patterns: ['*']
