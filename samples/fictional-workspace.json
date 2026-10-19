@@ -1,0 +1,288 @@
+{
+  "format": "setu-aur-workspace",
+  "schemaVersion": 1,
+  "appVersion": "0.1.0",
+  "exportedAt": "2026-10-19T13:37:14.128Z",
+  "workspace": {
+    "schemaVersion": 1,
+    "id": "e7850a40-85da-4d8c-a900-1477dcd88174",
+    "name": "Department of Imaginary Applied Studies (FICTIONAL SAMPLE)",
+    "unitType": "department",
+    "scope": "Fictional example: the department’s three undergraduate programmes, one taught master’s, its research centre and a single collaborative arrangement with an invented partner college.",
+    "policyVersion": "SETU Academic Unit Reviews Policy v1.0 (approved 23 September 2025)",
+    "createdAt": "2026-10-19T13:37:14.126Z",
+    "updatedAt": "2026-10-19T13:37:14.126Z",
+    "lifecycleStage": "self_evaluation",
+    "questions": {
+      "SD-01": {
+        "questionId": "SD-01",
+        "applicability": "applicable",
+        "response": "The department’s plan sets out four priorities aligned to the institutional strategy. Progress is clearest on programme renewal; the research priority has advanced more slowly than planned. Staff consultation in 2025 suggested the plan is not widely referenced day to day.",
+        "strengths": "Clear written priorities with annual review at the department board.",
+        "challenges": "Limited visibility of the plan to staff outside the management group.",
+        "improvementIdeas": "Short annual “plan on a page” discussed at a staff meeting each September.",
+        "evidenceIds": [
+          "ae99aecf-ca9d-4287-b74c-17136430824b",
+          "bb5d6b36-1a54-4b99-84fd-d0316dce7228"
+        ],
+        "confidence": "partial",
+        "status": "draft",
+        "updatedAt": "2026-10-19T13:37:14.127Z",
+        "owner": "Head of Department"
+      },
+      "TLA-02": {
+        "questionId": "TLA-02",
+        "applicability": "applicable",
+        "response": "Assessment is mapped to programme outcomes for the BSc, but the map predates recent module changes. External examiners have commented positively on standards and raised assessment load in year two.",
+        "strengths": "External examiner comments on consistency of standards.",
+        "challenges": "Year-two assessment bunching in weeks 10–12.",
+        "improvementIdeas": "Update the assessment map and agree a programme-level assessment calendar.",
+        "evidenceIds": [
+          "d47f0abb-558b-455c-8f3b-fa12236f76e1",
+          "906032d2-b80c-415d-acd9-617a42d44349"
+        ],
+        "confidence": "partial",
+        "status": "draft",
+        "updatedAt": "2026-10-19T13:37:14.127Z"
+      },
+      "TLA-03": {
+        "questionId": "TLA-03",
+        "applicability": "applicable",
+        "response": "Aggregated module evaluations show students value feedback timeliness, but comments suggest feedback is not always used for the next assessment.",
+        "strengths": "",
+        "challenges": "Little evidence about whether feedback changes later work.",
+        "improvementIdeas": "",
+        "evidenceIds": [
+          "8e1a4b5c-4348-411a-b609-78876fe300df"
+        ],
+        "confidence": "gap",
+        "status": "draft",
+        "updatedAt": "2026-10-19T13:37:14.127Z"
+      },
+      "SES-01": {
+        "questionId": "SES-01",
+        "applicability": "applicable",
+        "response": "Progression data has been requested but not yet received, so this section cannot yet be evidenced.",
+        "strengths": "",
+        "challenges": "",
+        "improvementIdeas": "",
+        "evidenceIds": [
+          "ea43e78d-1576-4a94-a73c-cb6e9201acbc"
+        ],
+        "confidence": "gap",
+        "status": "draft",
+        "updatedAt": "2026-10-19T13:37:14.127Z"
+      },
+      "PPA-05": {
+        "questionId": "PPA-05",
+        "applicability": "applicable",
+        "response": "One collaborative arrangement with an invented partner college is overseen through an annual joint board.",
+        "strengths": "",
+        "challenges": "",
+        "improvementIdeas": "",
+        "evidenceIds": [
+          "bb5d6b36-1a54-4b99-84fd-d0316dce7228"
+        ],
+        "confidence": "not_assessed",
+        "status": "draft",
+        "updatedAt": "2026-10-19T13:37:14.127Z"
+      },
+      "RIS-03": {
+        "questionId": "RIS-03",
+        "applicability": "not_applicable",
+        "response": "",
+        "strengths": "",
+        "challenges": "",
+        "improvementIdeas": "",
+        "evidenceIds": [],
+        "confidence": "not_assessed",
+        "status": "complete",
+        "updatedAt": "2026-10-19T13:37:14.126Z",
+        "notApplicableReason": "Fictional example: the department has no postgraduate research students in the review period."
+      }
+    },
+    "evidence": [
+      {
+        "id": "ae99aecf-ca9d-4287-b74c-17136430824b",
+        "title": "Department strategic plan 2022–2026 (fictional)",
+        "confidentiality": "internal",
+        "status": "available",
+        "questionIds": [
+          "SD-01"
+        ],
+        "source": "Department office",
+        "type": "Plan",
+        "period": "2022–2026",
+        "evidenceDate": "2022-06-15",
+        "reference": "Shared drive › Strategy › Plan v3"
+      },
+      {
+        "id": "bb5d6b36-1a54-4b99-84fd-d0316dce7228",
+        "title": "Department board minutes (summary)",
+        "confidentiality": "internal",
+        "status": "available",
+        "questionIds": [
+          "SD-01",
+          "PPA-05"
+        ],
+        "source": "Department board",
+        "type": "Minutes",
+        "period": "2021/22–2025/26",
+        "limitations": "Minutes before 2023 record decisions but not the discussion."
+      },
+      {
+        "id": "8e1a4b5c-4348-411a-b609-78876fe300df",
+        "title": "Module evaluation summary, aggregated",
+        "confidentiality": "internal",
+        "status": "available",
+        "questionIds": [
+          "TLA-03"
+        ],
+        "source": "Quality office (fictional)",
+        "type": "Survey",
+        "period": "2023/24–2024/25",
+        "limitations": "Response rates of 20–35%; part-time learners under-represented."
+      },
+      {
+        "id": "d47f0abb-558b-455c-8f3b-fa12236f76e1",
+        "title": "External examiner reports and responses",
+        "confidentiality": "internal",
+        "status": "requested",
+        "questionIds": [
+          "TLA-02"
+        ],
+        "source": "Programme boards",
+        "type": "Reports",
+        "period": "2021/22–2024/25",
+        "owner": "Programme leaders"
+      },
+      {
+        "id": "ea43e78d-1576-4a94-a73c-cb6e9201acbc",
+        "title": "Programme-level progression data",
+        "confidentiality": "internal",
+        "status": "missing",
+        "questionIds": [
+          "SES-01"
+        ],
+        "source": "Institutional data office (fictional)",
+        "type": "Data report",
+        "period": "2021/22–2025/26",
+        "limitations": "Not yet received; disaggregation to be checked for small numbers."
+      },
+      {
+        "id": "906032d2-b80c-415d-acd9-617a42d44349",
+        "title": "Assessment map, BSc Imaginary Studies",
+        "confidentiality": "internal",
+        "status": "outdated",
+        "questionIds": [
+          "TLA-02"
+        ],
+        "source": "Programme team",
+        "type": "Curriculum map",
+        "evidenceDate": "2025-02-01",
+        "limitations": "Predates the 2025 module changes."
+      }
+    ],
+    "engagements": [
+      {
+        "id": "81ea60b2-1574-4331-ac18-92cca38ceb1d",
+        "stakeholderGroup": "staff",
+        "method": "Two facilitated workshops",
+        "themes": "Workload; visibility of strategy; assessment timing.",
+        "outcomes": "Broad support for an assessment calendar; requests for clearer communication of priorities.",
+        "linkedQuestionIds": [
+          "SD-01",
+          "TLA-02"
+        ],
+        "plannedDate": "2026-03-10",
+        "completedDate": "2026-03-24"
+      },
+      {
+        "id": "1f162690-3aa6-4a16-bf5a-f3752ad933f2",
+        "stakeholderGroup": "student",
+        "method": "Class representative focus group",
+        "themes": "Feedback use; timetabling.",
+        "outcomes": "",
+        "linkedQuestionIds": [
+          "TLA-03"
+        ],
+        "plannedDate": "2026-04-08"
+      },
+      {
+        "id": "0718944a-bed2-41d8-89a8-5004962aa0ba",
+        "stakeholderGroup": "employer",
+        "method": "Advisory panel meeting",
+        "themes": "",
+        "outcomes": "",
+        "linkedQuestionIds": [
+          "EXT-02"
+        ],
+        "notYetConsulted": true
+      }
+    ],
+    "milestones": [
+      {
+        "id": "c24e9027-cede-4e35-bd0f-e454a26db3a6",
+        "title": "Agree review timeline",
+        "status": "completed",
+        "dueDate": "2026-01-31",
+        "owner": "Head of Department"
+      },
+      {
+        "id": "f5700eba-cdd3-4e95-aba9-c7a7daddeab3",
+        "title": "Stakeholder consultation completed",
+        "status": "in_progress",
+        "dueDate": "2026-05-15",
+        "owner": "Review coordinator"
+      },
+      {
+        "id": "2e6876c9-ea66-468e-979d-fc4781abf509",
+        "title": "Draft SER circulated within unit",
+        "status": "not_started",
+        "dueDate": "2026-11-30",
+        "owner": "Review coordinator"
+      },
+      {
+        "id": "4c3446b9-bffe-45a2-9361-b0dacc747b0f",
+        "title": "Peer review visit (date set by institution)",
+        "status": "not_started"
+      }
+    ],
+    "improvements": [
+      {
+        "id": "4170768d-e7a1-4b9d-981f-ba900a952a1f",
+        "origin": "self_evaluation",
+        "title": "Programme-level assessment calendar",
+        "rationale": "Staff and external examiner feedback point to assessment bunching in year two.",
+        "relatedQuestionIds": [
+          "TLA-02"
+        ],
+        "status": "proposed",
+        "updates": [],
+        "owner": "Programme leader (fictional)",
+        "measureOfSuccess": "Fewer than three summative deadlines in any one week."
+      }
+    ],
+    "peerRecommendations": [],
+    "approvals": [],
+    "annualUpdates": [],
+    "peerReviewChecklist": {},
+    "ser": {
+      "executiveSummary": "",
+      "sectionNarratives": {},
+      "selectedEvidenceIds": [
+        "ae99aecf-ca9d-4287-b74c-17136430824b",
+        "bb5d6b36-1a54-4b99-84fd-d0316dce7228",
+        "8e1a4b5c-4348-411a-b609-78876fe300df",
+        "d47f0abb-558b-455c-8f3b-fa12236f76e1",
+        "ea43e78d-1576-4a94-a73c-cb6e9201acbc",
+        "906032d2-b80c-415d-acd9-617a42d44349"
+      ],
+      "excludedSectionIds": [],
+      "officialTemplateConfirmed": false
+    },
+    "reviewStart": "2021-09-01",
+    "reviewEnd": "2026-08-31",
+    "coordinator": "Head of Department (fictional)"
+  }
+}
