@@ -56,7 +56,9 @@ To explore with data, open **Exports & Settings → Load fictional sample**, or 
 ## Publishing to GitHub Pages
 
 1. In the repository on GitHub, open **Settings → Pages** and set **Source** to **GitHub Actions**.
-2. Push to `main`. [`.github/workflows/deploy.yml`](.github/workflows/deploy.yml) runs lint, typecheck,
+2. The workflow deploys only from the `main` branch. Create `main` from the reviewed work (or merge
+   a pull request into it) and push. On other branches and pull requests it runs tests only.
+   [`.github/workflows/deploy.yml`](.github/workflows/deploy.yml) runs lint, typecheck,
    unit and E2E tests, builds with `BASE_PATH=/<repository-name>/`, and deploys.
 3. The site is served at `https://<owner>.github.io/<repository-name>/`.
 
@@ -65,7 +67,7 @@ The app uses hash routing (`#/areas/SD/SD-01`) so refreshes and deep links work 
 
 ## Architecture
 
-- Vite + React 18 + TypeScript, static assets only; `react-router-dom` `HashRouter`.
+- Vite 6 + React 18 + TypeScript, static assets only; React Router 7 `HashRouter`.
 - Data model and runtime validation: Zod (`src/models/schema.ts`), documented in
   [DATA_DICTIONARY.md](DATA_DICTIONARY.md).
 - Storage: Dexie over IndexedDB (`src/db/indexedDb.ts`). localStorage holds only UI preferences
@@ -103,9 +105,6 @@ Not implemented (by design for the prototype, or deferred):
 - Unknown fields in imported files are **dropped**, not preserved (safer than round-tripping unvalidated data).
 - No multi-user collaboration, accounts, server storage, file uploads, emailing or AI.
 - Word’s table of contents field is filled when the document is opened in Word (a static contents list is also included).
-- `npm audit` reports two **moderate** advisories in React Router v6 (GHSA-wrjc-x8rr-h8h6, GHSA-337j-9hxr-rhxg),
-  fixed only in v7. They concern links built from untrusted URLs and SSR hydration; this app navigates only
-  to internal constant routes and has no SSR. Plan the v7 upgrade before production.
 - Manual screen-reader testing (NVDA/JAWS/VoiceOver) has not yet been carried out; see [TESTING.md](TESTING.md).
 
 ## Before any live use
